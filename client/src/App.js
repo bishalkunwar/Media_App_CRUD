@@ -4,18 +4,24 @@ import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import rainy_flower from './images/rainy_flower.jpg';
+import useStyles from './styles';
+
 const App = () => {
+    const classes = useStyles();
     return ( <
         Container maxidth = "lg" >
         <
-        AppBar position = "static"
+        AppBar className = { classes.appBar }
+        position = "static"
         color = "inherit" >
         <
-        Typography variant = "h2"
+        Typography className = { classes.heading }
+        variant = "h2"
         align = "center" >
         Memories <
         /Typography> <
-        img src = { rainy_flower }
+        img className = { classes.image }
+        src = { rainy_flower }
         alt = "memories"
         height = "60" / >
         <
@@ -41,8 +47,8 @@ const App = () => {
         <
         Form / >
         <
-        /Grid> <
-        /Grid> <
+        /Grid> < /
+        Grid > <
         /Container>
 
         <
