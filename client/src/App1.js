@@ -19,8 +19,6 @@ const App = () => {
     }, [currentId, dispatch]);
 
     return ( <
-        div >
-        <
         Container maxWidth = "lg" >
         <
         AppBar className = { classes.appBar }
@@ -35,10 +33,12 @@ const App = () => {
         img className = { classes.image }
         src = { rainy_flower }
         alt = "icon"
-        height = "50" /
+        height = "60" /
         >
         <
         /AppBar>{" "} <
+        Grow in >
+        <
         Container >
         <
         Grid container justify = "space-between"
@@ -60,8 +60,8 @@ const App = () => {
         Grid > { " " } <
         /Grid>{" "} < /
         Container > { " " } <
-        /Container>{" "} < /
-        div >
+        /Grow>{" "} < /
+        Container >
     );
 };
 
